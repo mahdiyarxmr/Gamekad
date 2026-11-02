@@ -1,0 +1,24 @@
+DirectoryIndex index.php
+Options -MultiViews -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # فایل‌های واقعی (css, js, عکس، آپلود) مستقیم سرو شوند
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+
+  # بقیه درخواست‌ها — حتی پوشه admin — به index.php
+  RewriteRule ^ index.php [QSA,L]
+</IfModule>
+
+<IfModule mod_authz_core.c>
+  <FilesMatch "\.(sqlite|sqlite3|sql|log)$">
+    Require all denied
+  </FilesMatch>
+</IfModule>
+<IfModule !mod_authz_core.c>
+  <FilesMatch "\.(sqlite|sqlite3|sql|log)$">
+    Deny from all
+  </FilesMatch>
+</IfModule>

@@ -1,0 +1,14 @@
+<?php
+// اگر مسیر سایت درست تشخیص داده نشد، این فایل را کپی کن به config.local.php
+// و مقدار را عوض کن.
+//
+// XAMPP مثال:  http://localhost/gamekad/
+// define('BASE_PATH', '/gamekad');
+//
+// cPanel روی دامنه اصلی:  https://gamekad.ir/
+// define('BASE_PATH', '');
+//
+// cPanel داخل پوشه:  https://site.com/gamekad/
+// define('BASE_PATH', '/gamekad');
+
+// define('BASE_PATH', '/gamekad');

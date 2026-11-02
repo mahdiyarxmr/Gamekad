@@ -1,0 +1,29 @@
+{
+  "id": "/",
+  "name": "گیم‌کاد رکاد",
+  "short_name": "رکاد",
+  "description": "رزرو صندلی، آموزش نقش و لیدربورد بازی‌های رکاد",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "dir": "rtl",
+  "lang": "fa",
+  "background_color": "#f2faf9",
+  "theme_color": "#21295a",
+  "icons": [
+    {
+      "src": "assets/img/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
